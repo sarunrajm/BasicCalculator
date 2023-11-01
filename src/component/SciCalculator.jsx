@@ -63,8 +63,8 @@ function SciCalculator() {
         <Button className="me-2" sx={buttonStyle} variant="outlined" onClick={() => handleSquareRoot()}>
           √
         </Button>
-        <Button className="me-2" sx={buttonStyle} variant="outlined" onClick={() => handleButtonClick('%')}>
-          %
+        <Button className="me-2" sx={buttonStyle} variant="outlined" onClick={() => handleButtonClick('/')}>
+          / {/* Division */}
         </Button>
         <Button className="me-2" sx={buttonStyle} variant="outlined" onClick={toggleDarkMode}>
           {darkMode ? 'L' : 'D'}
@@ -81,8 +81,8 @@ function SciCalculator() {
         <Button className="me-2" sx={buttonStyle} variant="outlined" onClick={() => handleButtonClick('9')}>
           9
         </Button>
-        <Button className="me-2" sx={buttonStyle} variant="outlined" onClick={() => handleButtonClick('/')}>
-          /
+        <Button className="me-2" sx={buttonStyle} variant="outlined" onClick={() => handleButtonClick('+')}>
+          + {/* Addition */}
         </Button>
       </Box>
       <Box className="button-row m-1">
@@ -96,7 +96,7 @@ function SciCalculator() {
           6
         </Button>
         <Button className="me-2" sx={buttonStyle} variant="outlined" onClick={() => handleButtonClick('*')}>
-          *
+          * {/* Multiplication */}
         </Button>
       </Box>
       <Box className="button-row m-1">
@@ -110,7 +110,7 @@ function SciCalculator() {
           3
         </Button>
         <Button className="me-2" sx={buttonStyle} variant="outlined" onClick={() => handleButtonClick('-')}>
-          -
+          - {/* Subtraction */}
         </Button>
       </Box>
       <Box className="button-row m-1">
